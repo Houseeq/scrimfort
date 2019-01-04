@@ -27,10 +27,10 @@ module.exports.run = async (bot, message, args) => {
     let editLast3 = null;
 
     let startMessage = new Discord.RichEmbed()
-        .setTitle("Fortnite Scrims")
-        .setDescription("Please write the last 3 codes from you're server id")
+        .setTitle("FNPH Scrim")
+        .setDescription("Please write the last 3 codes from your server id")
         .setColor("#8600b3")
-        .setFooter("friedclam");
+        .setFooter("FNPH League");
 
     message.channel.send({embed: startMessage});
 
@@ -66,7 +66,7 @@ module.exports.run = async (bot, message, args) => {
     },60000);
 
     let last3 = new Discord.RichEmbed()
-        .setTitle("Last 3 code")
+        .setTitle("Last 3 codes")
         .setColor("#8600b3");
 
     setTimeout(async () => {
